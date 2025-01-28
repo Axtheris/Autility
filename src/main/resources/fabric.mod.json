@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "autility",
+	"version": "${version}",
+	"name": "Autility",
+	"description": "This is a minecraft utility mod.",
+	"authors": [
+		"Axther"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/autility/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.axther.autility.Autility"
+		],
+		"fabric-datagen": [
+			"com.axther.autility.AutilityDataGenerator"
+		],
+		"client:": [
+			"com.axther.autility.AutilityClient"
+		]
+	},
+	"mixins": [
+		"autility.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
